@@ -112,7 +112,7 @@ header{
 			display: flex;
 			.slogan{
 				margin-left: 20px;
-				margin-top: 21px;
+				margin-top: 17px;
 			}
 		}
 		.cont{
@@ -142,6 +142,22 @@ header{
 		line-height: 48px;
 		text-transform: uppercase;
 		margin: 0;
+		span{
+			position: relative;
+			z-index: 0;
+			display: inline-block;
+			&:before{
+				content: '';
+				background: #fbb92c;
+				height: 9px;
+				display: block;
+				position: absolute;
+				bottom: 6px;
+				left: 0px;
+				width: 100%;
+				z-index: -1;
+			}
+		}
 	}
 	.sub_title{
 		font-size: 22px;
@@ -153,7 +169,7 @@ header{
 		text-decoration: none;
 		display: inline-block;
 		line-height: 100px;
-		box-shadow: 0 19px 39px 12px rgba(0, 0, 0, 0.18), 0 8px 0 #d2940f;
+		box-shadow: 0 19px 39px 12px rgba(0, 0, 0, 0.3), 0 8px 0 #d2940f;
 		border-radius: 5px;
 		background: #fbb92c;
 		font-family: 'Futura PT Extra';
@@ -222,12 +238,15 @@ footer{
 	display: none;
 	border-radius: 2px;
 	.img_step{
-		position: absolute;
+	    position: absolute;
 		right: 60px;
-		top: 160px;
-		width: 400px;
+		top: 80px;
+		width: 500px;
 		text-align: right;
 		z-index: 1;
+		img{
+			width: 440px;
+		}
 		.opacity{
 			position: absolute;
 			top: 0;
@@ -238,6 +257,9 @@ footer{
 		.active{
 			opacity: 1;
 			transition: .2s;
+		}
+		.zindex{
+			z-index: 10;
 		}
 	}
 	.step_6_images{
@@ -262,6 +284,7 @@ footer{
 		.item{
 			img{
 				position: absolute;
+				width: 400px;
 			}
 			.text{
 				font-size: 14px;
@@ -399,6 +422,13 @@ footer{
 				&.current{
 					display: block
 				}
+				&.step2{
+					.item{
+						label{
+							white-space: nowrap;
+						}
+					}
+				}
 			}
 			.ask{
 				color: #000;
@@ -438,6 +468,8 @@ footer{
 						align-items: center;
 						visibility: hidden;
 						transition: .2s;
+						z-index: 12;
+
 						.col{
 							padding: 10px;
 							.zag{
@@ -458,6 +490,18 @@ footer{
 						line-height: 40px;
 						display: block;
 						cursor: pointer;
+						svg{
+							width: 16px;
+							height: 16px;
+							position: relative;
+							top: 3px;
+							margin-left: 5px;
+							display: none;
+							cursor: pointer;
+							path{
+								fill: #fbb92c;
+							}
+						}
 						span{
 							&:before{
 								content: '';
@@ -483,6 +527,7 @@ footer{
 						}
 						&:hover ~ .hover{
 							visibility: initial;
+							transition-delay: .5s;
 						}
 					}
 				}
@@ -844,17 +889,17 @@ footer{
 #sended{
 	max-width: 765px;
 	width: 100%;
-	padding: 100px 100px 80px 250px;
-	background: #fff url('../images/sended.svg') no-repeat 100px 85px;
-
+	padding: 80px 40px 80px 260px;
+	background: #fff url('../images/sended.svg') no-repeat 100px 64px;
+	overflow: hidden;
 	.text1{
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 700;
 		line-height: 40px;
 	}
 	.text2{
 		font-size: 20px;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 }
 
@@ -1106,10 +1151,12 @@ footer{
 	}
 	#modal_form .img_step{
 		right: 20px;
-		top: 110px;
+		top: 60px;
 	}
 	#modal_form #steps .content .left{
 		max-width: 350px;
+		position: relative;
+		z-index: 10;
 	}
 	#modal_form #steps .actions{
 		padding-left: 30px;
@@ -1145,19 +1192,368 @@ footer{
 		position: relative;
 		z-index: 3;
 	}
+	#modal_form .step_6_images .item .text{
+		display: none;
+	}
+	#modal_form .step_6_images .item.item1 img{
+		right: 0;
+	}
+	#modal_form .step_6_images .item.item2 img{
+		top: 0px;
+		right: 0;
+	}
+	#modal_form .step_6_images .item.item3 img{
+		top: 10px;
+    	right: -30px;
+	}
+	#modal_form .step_6_images .item.item4 img{
+		top: 90px;
+	}
+	#modal_form .step_6_images .item.item5 img{
+		top: 80px;
+	}
+	#modal_form #steps .content .radio_list .item label svg{
+		display: initial;
+	}
+	#modal_form #steps .content .radio_list .item .hover{
+		display: none;
+	}
+	.hover.mobile_hover{
+		padding: 15px;
+		background: #fff;
+		box-shadow: 0 3px 78px 9px rgba(0, 0, 0, 0.08);
+		border-radius: 3px;
+		z-index: 12;
+		.col{
+			padding: 10px;
+			display: inline-block;
+			max-width: 400px;
+			vertical-align: middle;
+			.zag{
+				font-size: 20px;
+				font-weight: 900;
+				margin-bottom: 10px;
+			}
+			.text{
+				line-height: 22px;
+				font-size: 15px;
+			}
+		}
+	}
+	.contents h1 span:before{
+		bottom: 6px;
+		left: 0px;
+		right: 0px;
+		z-index: -1;
+		margin-left: -1px;
+		margin-right: -8px;
+	}
 }
 @media (max-width: 767px){
-
+	.container{
+		padding: 0px 15px;
+		max-width: 375px;
+	}
+	.main{
+		padding-top: 10px;
+		height: initial;
+	}
+	header .row{
+		display: block;
+		.logo{
+			img{
+				max-width: 180px;
+			}
+			.slogan{
+				margin-top: 15px;
+				font-size: 13px;
+				line-height: 16px;
+				br{
+					display: none;
+				}
+			}
+		}
+		.cont{
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			.time{
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.contents{
+		margin-top: 30px;
+		h1{
+			font-size: 26px;
+			line-height: initial;
+		}
+		.sub_title{
+			margin-top: 10px;
+			font-size: 14px;
+		}
+		a.big_btn{
+			padding: 10px 0px;
+			display: block;
+			text-align: center;
+			line-height: 60px;
+			font-size: 30px;
+		}
+		.text_btn{
+			margin-top: 20px;
+			font-size: 13px;
+			br{
+				display: none;
+			}
+		}
+		.icons{
+			margin-top: 30px;
+			display: block;
+			.row{
+				flex-wrap: wrap;
+				.ico{
+					flex: 1 0 50%;
+					margin: 0;
+					margin-bottom: 30px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	footer .row{
+		display: block;
+		text-align: center;
+		.copyright{
+			margin-bottom: 10px;
+			padding: 0px 20px;
+		}
+	}
+	#callback {
+		padding: 25px;
+		.title{
+			font-size: 22px;
+			br{
+				display: none;
+			}
+		}
+		.row{
+			display: block;
+		}
+		.timer{
+			text-align: center;
+		}
+		.img{
+			display: none;
+		}
+		.btn{
+			margin-left: 0;
+			width: 100%;
+			margin-top: 20px;
+		}
+		.item{
+			margin-bottom: 0;
+			margin-top: 20px;
+		}
+	}
+	.step_6_images,
+	.img_step{
+		display: none;
+	}
+	#modal_form{
+		padding: 20px;
+		min-height: initial;
+		#steps{
+			.content{
+				padding-left: 0;
+				padding-right: 0;
+				margin-top: 20px;
+				h3{
+					font-size: 28px;
+				}
+				.ask{
+					font-size: 20px;
+				}
+				.checkbox_list .item label{
+					line-height: 20px;
+					padding-top: 10px;
+					font-size: 14px;
+				}
+				.radio_list .item label{
+					line-height: 20px;
+					padding-top: 10px;
+					font-size: 14px;
+				}
+			}
+			.actions{
+				padding-left: 0;
+				margin-top: 20px;
+				ul{
+					li{
+						a{
+							width: initial;
+							padding: 21px 50px;
+						}
+					}
+				}
+			}
+		}
+	}
+	#modal_form #finished .animation{
+		margin-top: 40px;
+	}
+	#modal_form #finished .timer{
+		padding-bottom: 40px;
+		#countdown{
+			font-size: 80px;
+		}
+	}
+	#modal_form #formular .girl{
+		display: none;
+	}
+	#modal_form #formular{
+		width: 100%;
+	}
+	#modal_form #formular .title{
+		font-size: 30px;
+	}
+	#modal_form #formular p{
+		font-size: 13px;
+		br{
+			display: none;
+		}
+	}
+	#sended{
+		background: #fff;
+		padding: 40px;
+		text-align: center;
+		width: 320px;
+		.text1{
+			font-size: 25px;
+			line-height: initial;
+		}
+		.text2{
+			font-size: 16px;
+			margin-top: 10px;
+		}
+	}
+	#steps{
+		.steps{
+			overflow-x: scroll;
+		}
+	}
+	#modal_form #steps ul[role=tablist]{
+		width: initial;
+		li{
+			padding: 0px 20px;
+			white-space: nowrap;
+		}
+	}
+	#modal_form #formular .form_line input[type=submit]{
+		padding: 20px 0px;
+	}
+	.contents h1 span:before{
+		height: 6px;
+		bottom: 4px;
+	}
+	#modal_form #steps .content .radio_list .item .hover{
+		display: none;
+	}
+	.hover.mobile_hover{
+		padding: 15px;
+		background: #fff;
+		box-shadow: 0 3px 78px 9px rgba(0, 0, 0, 0.08);
+		border-radius: 0px;
+		z-index: 12;
+		.col{
+			padding: 10px;
+			.zag{
+				font-size: 20px;
+				font-weight: 900;
+				margin-bottom: 10px;
+			}
+			.text{
+				line-height: 22px;
+				font-size: 15px;
+			}
+		}
+	}
+	#modal_form #steps .content .radio_list .item label svg{
+		display: initial;
+	}
 }
 @media (max-width: 330px){
-
+	header .row .logo img{
+		max-width: 150px;
+	}
+	header .row .logo .slogan{
+		margin-top: 10px;
+	}
+	.contents h1{
+		font-size: 22px;
+	}
+	.contents a.big_btn{
+		margin-top: 30px;
+		line-height: 50px;
+	}
+	#callback .online{
+		padding-right: 0;
+	}
+	#modal_form #steps .actions ul li a{
+		padding: 21px 40px;
+	}
+	#modal_form #steps .content .ask{
+		font-size: 18px;
+	}
+	#modal_form {
+		padding: 0px 20px 20px;
+	}
+	header .row .cont .btn{
+		padding: 18px 40px;
+	}
+}
+.step3_img_3{
+	&.anim{
+		&.anim1{
+			animation: kladka 4s 1s infinite;
+		}
+		&.anim2{
+			animation: kladka 4s 2s infinite;
+		}
+	}
+}
+.step3_img_4{
+	&.anim{
+		&.anim3{
+			animation: kladka 1.8s 1s infinite;
+		}
+	}
+}
+@keyframes kladka{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
 }
 
 
 
-
-
-
+.step4_img{
+	.only_vinos{
+		display: none;
+	}
+}
+@media (min-height: 880px) and (max-height: 1020px) {
+	.contents{
+		margin-top: 110px;
+	}
+}
 
 
 

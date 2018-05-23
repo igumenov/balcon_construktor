@@ -1,6 +1,6 @@
 <?php
-$to = '9323206@gmail.com';
-$email =  $to;
+$to = 'boba-55@mail.ru';
+$email =  'webmaster@example.com';
 //if ( isset( $_POST['steps_form'] ) ) {
 
 
@@ -32,17 +32,16 @@ $email =  $to;
         $filepath = '';
         $filename = '';
     }
-	
-	$body = '<p><b>Площадь балкона:</b>'.$step_1_range_1.'</p>';
-	$body .= '<p><b>Бюджет:</b>'.$step_1_range_2.'</p>';
-	$body .= '<p><b>Какое остекление:</b>'.$step_2.'</p>';
-    $body .= '<p><b>Дополнительные работы к остеклению:</b>'.$step_3_res.'</p>';
-	$body .= '<p><b>Отделка стен:</b>'.$step_4.'</p>';
-	$body .= '<p><b>Отделка пола:</b>'.$step_5.'</p>';
-	$body .= '<p><b>Подарок к заказу:</b>'.$step_6.'</p>';
+	$body = '<p><b>Площадь балкона: </b>'.$step_1_range_1.'м<sup>2</sup></p>';
+	$body .= '<p><b>Бюджет: </b>'.$step_1_range_2.'руб.</p>';
+	$body .= '<p><b>Какое остекление: </b>'.$step_2.'</p>';
+    $body .= '<p><b>Дополнительные работы к остеклению: </b>'.$step_3_res.'</p>';
+	$body .= '<p><b>Отделка стен: </b>'.$step_4.'</p>';
+	$body .= '<p><b>Отделка пола: </b>'.$step_5.'</p>';
+	$body .= '<p><b>Подарок к заказу: </b>'.$step_6.'</p>';
 	$body .= '<hr/>';
-	$body .= '<p><b>Имя:</b>'.$name.'</p>';
-	$body .= '<p><b>Телефон:</b>'.$tel.'</p>';
+	$body .= '<p><b>Имя: </b>'.$name.'</p>';
+	$body .= '<p><b>Телефон: </b>'.$tel.'</p>';
 	$body .= '<p><b>Время звонка:</b>'.$call_time.'</p>';
 	send_mail($to, $body, $email, $filepath, $filename);
 //}
@@ -52,13 +51,13 @@ $email =  $to;
 // Вспомогательная функция для отправки почтового сообщения с вложением
 function send_mail($to, $body, $email, $filepath, $filename)
 {
-  $subject = 'Тестирование формы с прикреплением файла с сайта proverstka.com.ua';
+  $subject = 'Заявка с сайта '.$_SERVER['HTTP_REFERER'];
   $boundary = "--".md5(uniqid(time())); // генерируем разделитель
-  $headers = "From: ".$email."\r\n";   
+  $headers = "From: ЕВРОРЕМ БАЛКОН <".$email.">\r\n";   
   $headers .= "MIME-Version: 1.0\r\n";
   $headers .="Content-Type: multipart/mixed; boundary=\"".$boundary."\"\r\n";
   $multipart = "--".$boundary."\r\n";
-  $multipart .= "Content-type: text/plain; charset=\"utf-8\"\r\n";
+  $multipart .= "Content-type: text/html; charset=\"utf-8\"\r\n";
   $multipart .= "Content-Transfer-Encoding: quoted-printable\r\n\r\n";
 
   $body = $body."\r\n\r\n";
