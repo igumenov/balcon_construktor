@@ -1,0 +1,892 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-BoldItalic.eot");
+  src: url("../fonts/Lato-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-BoldItalic.woff2") format("woff2"), url("../fonts/Lato-BoldItalic.woff") format("woff"), url("../fonts/Lato-BoldItalic.ttf") format("truetype"), url("../fonts/Lato-BoldItalic.svg#Lato-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Black.eot");
+  src: url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black.svg#Lato-Black") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-BlackItalic.eot");
+  src: url("../fonts/Lato-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-BlackItalic.woff2") format("woff2"), url("../fonts/Lato-BlackItalic.woff") format("woff"), url("../fonts/Lato-BlackItalic.ttf") format("truetype"), url("../fonts/Lato-BlackItalic.svg#Lato-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Futura PT Extra';
+  src: url("../fonts/FuturaPT-ExtraBold.eot");
+  src: url("../fonts/FuturaPT-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-ExtraBold.woff2") format("woff2"), url("../fonts/FuturaPT-ExtraBold.woff") format("woff"), url("../fonts/FuturaPT-ExtraBold.ttf") format("truetype"), url("../fonts/FuturaPT-ExtraBold.svg#FuturaPT-ExtraBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  font-size: 14px;
+  overflow-x: hidden;
+  height: 100%; }
+
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: " "; }
+
+.clearfix:before {
+  clear: both;
+  display: table;
+  content: " "; }
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative; }
+
+.btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 21px 40px;
+  background-color: #fbb92c;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 3px;
+  transition: .2s;
+  margin-left: 20px; }
+  .btn:hover {
+    background-color: #ffd800; }
+
+.main {
+  background: url("../images/body.jpg") no-repeat top center;
+  background-size: cover;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+header .row {
+  display: flex;
+  justify-content: space-between; }
+  header .row .logo {
+    display: flex; }
+    header .row .logo .slogan {
+      margin-left: 20px;
+      margin-top: 21px; }
+  header .row .cont {
+    display: flex;
+    align-items: center; }
+    header .row .cont .tel {
+      font-weight: 900;
+      font-size: 24px;
+      color: #000;
+      text-decoration: none; }
+    header .row .cont .time {
+      display: block;
+      font-size: 13px;
+      margin-top: 5px; }
+
+.contents {
+  flex: 1 0 auto;
+  text-align: center;
+  margin-top: 70px; }
+  .contents h1 {
+    font-family: 'Futura PT Extra';
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin: 0; }
+  .contents .sub_title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 30px; }
+  .contents a.big_btn {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 100px;
+    box-shadow: 0 19px 39px 12px rgba(0, 0, 0, 0.18), 0 8px 0 #d2940f;
+    border-radius: 5px;
+    background: #fbb92c;
+    font-family: 'Futura PT Extra';
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 0px 85px;
+    margin-top: 30px;
+    transition: .2s; }
+    .contents a.big_btn:hover {
+      background: #ffd800; }
+  .contents .text_btn {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 30px; }
+  .contents .icons {
+    display: inline-block;
+    margin-top: 50px; }
+    .contents .icons .row {
+      display: flex; }
+      .contents .icons .row .ico {
+        margin: 0px 30px; }
+        .contents .icons .row .ico .text {
+          font-weight: 900;
+          margin-top: 20px; }
+          .contents .icons .row .ico .text span {
+            display: block;
+            font-weight: 700; }
+
+footer {
+  padding: 30px 0px;
+  flex: 0 0 auto; }
+  footer .row {
+    display: flex;
+    justify-content: space-between; }
+    footer .row a {
+      text-decoration: none;
+      display: inline-block;
+      color: #000;
+      border-bottom: 1px solid #000;
+      transition: .2s; }
+      footer .row a:hover {
+        border-bottom: 1px solid transparent; }
+
+#modal_form {
+  width: 100%;
+  max-width: 1140px;
+  position: relative;
+  margin: 0;
+  padding: 20px 60px 60px;
+  overflow: initial;
+  min-height: 700px;
+  display: none;
+  border-radius: 2px; }
+  #modal_form .img_step {
+    position: absolute;
+    right: 60px;
+    top: 160px;
+    width: 400px;
+    text-align: right;
+    z-index: 1; }
+    #modal_form .img_step .opacity {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      transition: .2s; }
+    #modal_form .img_step .active {
+      opacity: 1;
+      transition: .2s; }
+  #modal_form .step_6_images {
+    position: absolute;
+    right: 60px;
+    top: 160px;
+    width: 400px;
+    text-align: right;
+    z-index: 1;
+    opacity: 0; }
+    #modal_form .step_6_images .opacity {
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      transition: .2s; }
+    #modal_form .step_6_images .active {
+      opacity: 1;
+      transition: .2s; }
+    #modal_form .step_6_images .item img {
+      position: absolute; }
+    #modal_form .step_6_images .item .text {
+      font-size: 14px;
+      line-height: 24px;
+      width: 200px;
+      text-align: left;
+      position: absolute; }
+      #modal_form .step_6_images .item .text .zag {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px; }
+      #modal_form .step_6_images .item .text p {
+        margin: 0; }
+    #modal_form .step_6_images .item.item1 img {
+      max-width: 280px;
+      top: 0;
+      right: 237px; }
+    #modal_form .step_6_images .item.item1 .text {
+      top: 0;
+      right: 0px; }
+    #modal_form .step_6_images .item.item2 img {
+      max-width: 280px;
+      top: 40px;
+      right: 267px; }
+    #modal_form .step_6_images .item.item2 .text {
+      top: 130px;
+      right: 0px;
+      width: 220px; }
+    #modal_form .step_6_images .item.item3 img {
+      max-width: 540px;
+      top: 10px;
+      right: 30px; }
+    #modal_form .step_6_images .item.item3 .text {
+      top: -20px;
+      right: 0px;
+      width: 320px; }
+    #modal_form .step_6_images .item.item4 img {
+      max-width: 540px;
+      top: 150px;
+      right: 0px; }
+    #modal_form .step_6_images .item.item4 .text {
+      top: 20px;
+      right: 0px;
+      width: 520px; }
+    #modal_form .step_6_images .item.item5 img {
+      top: 140px;
+      right: -30px; }
+    #modal_form .step_6_images .item.item5 .text {
+      top: 20px;
+      right: 0px;
+      width: 520px; }
+  #modal_form #steps ul[role=tablist] {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    #modal_form #steps ul[role=tablist] li {
+      text-align: center;
+      border-bottom: 3px solid #f3f3f3;
+      flex-grow: 1; }
+      #modal_form #steps ul[role=tablist] li.current {
+        border-bottom: 3px solid #fbb92c; }
+        #modal_form #steps ul[role=tablist] li.current a {
+          color: #000; }
+      #modal_form #steps ul[role=tablist] li.done a {
+        color: #000; }
+      #modal_form #steps ul[role=tablist] li a {
+        color: #c7c7c7;
+        font-size: 14px;
+        font-weight: 900;
+        text-decoration: none;
+        display: block;
+        padding: 18px 0px; }
+      #modal_form #steps ul[role=tablist] li .current-info {
+        display: none; }
+  #modal_form #steps .content {
+    padding-left: 50px;
+    margin-top: 50px;
+    position: relative; }
+    #modal_form #steps .content .left {
+      max-width: 430px; }
+    #modal_form #steps .content h3 {
+      display: none;
+      font-size: 50px;
+      font-weight: 900;
+      color: #fbb92c;
+      margin: 0;
+      margin-bottom: 20px; }
+      #modal_form #steps .content h3.current {
+        display: block; }
+    #modal_form #steps .content section {
+      display: none; }
+      #modal_form #steps .content section.current {
+        display: block; }
+    #modal_form #steps .content .ask {
+      color: #000;
+      font-size: 22px;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+    #modal_form #steps .content .step1_text1 {
+      margin-bottom: 10px;
+      font-size: 16px; }
+      #modal_form #steps .content .step1_text1 span {
+        display: inline-block;
+        line-height: 32px;
+        border-radius: 3px;
+        background-color: #e8e8e8;
+        padding: 0px 20px;
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 600; }
+    #modal_form #steps .content .radio_list .item {
+      margin-bottom: 10px;
+      position: relative; }
+      #modal_form #steps .content .radio_list .item .hover {
+        width: 630px;
+        padding: 35px;
+        background: #fff;
+        box-shadow: 0 3px 78px 9px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        display: flex;
+        align-items: center;
+        visibility: hidden;
+        transition: .2s; }
+        #modal_form #steps .content .radio_list .item .hover .col {
+          padding: 10px; }
+          #modal_form #steps .content .radio_list .item .hover .col .zag {
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 10px; }
+          #modal_form #steps .content .radio_list .item .hover .col .text {
+            line-height: 22px;
+            font-size: 15px; }
+      #modal_form #steps .content .radio_list .item label {
+        font-size: 16px;
+        position: relative;
+        padding-left: 37px;
+        line-height: 40px;
+        display: block;
+        cursor: pointer; }
+        #modal_form #steps .content .radio_list .item label span:before {
+          content: '';
+          width: 16px;
+          height: 16px;
+          border-radius: 8px;
+          background-color: #d1d1d1;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 11px;
+          transition: .2s; }
+        #modal_form #steps .content .radio_list .item label input[type=radio] {
+          display: none; }
+          #modal_form #steps .content .radio_list .item label input[type=radio]:checked ~ span {
+            font-weight: 600; }
+            #modal_form #steps .content .radio_list .item label input[type=radio]:checked ~ span:before {
+              background-color: #fbb92c; }
+        #modal_form #steps .content .radio_list .item label:hover ~ .hover {
+          visibility: initial; }
+    #modal_form #steps .content .checkbox_list .item {
+      margin-bottom: 10px;
+      position: relative; }
+      #modal_form #steps .content .checkbox_list .item .hover {
+        width: 630px;
+        padding: 35px;
+        background: #fff;
+        box-shadow: 0 3px 78px 9px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        display: flex;
+        align-items: center;
+        visibility: hidden;
+        transition: .2s; }
+        #modal_form #steps .content .checkbox_list .item .hover .col {
+          padding: 10px; }
+          #modal_form #steps .content .checkbox_list .item .hover .col .zag {
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 10px; }
+          #modal_form #steps .content .checkbox_list .item .hover .col .text {
+            line-height: 22px;
+            font-size: 15px; }
+      #modal_form #steps .content .checkbox_list .item label {
+        font-size: 16px;
+        position: relative;
+        padding-left: 37px;
+        line-height: 40px;
+        display: block;
+        cursor: pointer; }
+        #modal_form #steps .content .checkbox_list .item label span:before {
+          content: '';
+          width: 22px;
+          height: 22px;
+          border-radius: 2px;
+          border: 1px solid #b3b3b3;
+          background-color: #fff;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 7px;
+          transition: .2s; }
+        #modal_form #steps .content .checkbox_list .item label span:after {
+          content: '';
+          display: block;
+          width: 11px;
+          height: 8px;
+          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU33OYQ2DQAwG0IeC4QQkzAESFhxgASfgAAmTMClIWHq5kiNZdn8uaV/br/P/bXhh7fDEhB2fZi5RKQU88ahgRoAbwhwwtgzNpne9kqUyHLBHNFt8Q3k6/l84Y1wZczrwgRFLzXkl+gK1VBDnkux/4AAAAABJRU5ErkJggg==) no-repeat;
+          position: absolute;
+          top: 16px;
+          left: 7px;
+          opacity: 0; }
+        #modal_form #steps .content .checkbox_list .item label input[type=checkbox] {
+          display: none; }
+          #modal_form #steps .content .checkbox_list .item label input[type=checkbox]:checked ~ span {
+            font-weight: 600; }
+            #modal_form #steps .content .checkbox_list .item label input[type=checkbox]:checked ~ span:before {
+              background-color: #fbb92c;
+              border: 1px solid #fbb92c; }
+            #modal_form #steps .content .checkbox_list .item label input[type=checkbox]:checked ~ span:after {
+              opacity: 1; }
+        #modal_form #steps .content .checkbox_list .item label:hover ~ .hover {
+          visibility: initial; }
+  #modal_form #steps .actions {
+    padding-left: 50px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2; }
+    #modal_form #steps .actions ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      #modal_form #steps .actions ul li {
+        display: inline-block; }
+        #modal_form #steps .actions ul li.disabled {
+          display: none; }
+        #modal_form #steps .actions ul li a {
+          text-decoration: none;
+          border: none;
+          outline: none;
+          display: inline-block;
+          padding: 21px 40px;
+          background-color: #fbb92c;
+          color: #000;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 3px;
+          transition: .2s;
+          width: 190px;
+          text-align: center; }
+          #modal_form #steps .actions ul li a:hover {
+            background-color: #ffd800; }
+          #modal_form #steps .actions ul li a.prev {
+            border: 1px solid #ebebeb;
+            border-radius: 5px;
+            background: #fff;
+            margin-right: 20px; }
+            #modal_form #steps .actions ul li a.prev:hover {
+              background-color: #ebebeb; }
+  #modal_form #finished {
+    text-align: center;
+    display: none; }
+    #modal_form #finished .animation {
+      margin-top: 120px; }
+    #modal_form #finished .timer {
+      margin-top: 60px; }
+      #modal_form #finished .timer #countdown {
+        font-size: 100px;
+        margin-bottom: 20px;
+        font-weight: 100;
+        line-height: 70px; }
+      #modal_form #finished .timer .text {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: -10px; }
+  #modal_form #formular {
+    display: none;
+    width: 1020px; }
+    #modal_form #formular .left {
+      max-width: 400px; }
+    #modal_form #formular .title {
+      font-family: 'Futura PT Extra';
+      color: #fbb92c;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      margin-top: 20px; }
+    #modal_form #formular p {
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 24px; }
+    #modal_form #formular .form_line {
+      margin-top: 20px; }
+      #modal_form #formular .form_line input[type=file] {
+        display: none; }
+      #modal_form #formular .form_line label.file {
+        background: url(../images/ico_file_black.svg) no-repeat left center;
+        color: #545454;
+        padding: 10px;
+        padding-left: 30px;
+        cursor: pointer; }
+        #modal_form #formular .form_line label.file span {
+          border-bottom: 1px solid #545454; }
+        #modal_form #formular .form_line label.file:hover span {
+          border-bottom: 1px solid #fff; }
+      #modal_form #formular .form_line .files {
+        margin-left: 0px; }
+      #modal_form #formular .form_line input[type=text] {
+        height: 65px;
+        line-height: 65px;
+        border-radius: 5px;
+        border: 1px solid #d1d1d1;
+        display: block;
+        width: 100%;
+        padding-left: 25px;
+        font-size: 14px; }
+        #modal_form #formular .form_line input[type=text]:focus {
+          box-shadow: 0 0 10px rgba(36, 196, 255, 0.51);
+          border: 1px solid #24c4ff; }
+      #modal_form #formular .form_line select {
+        height: 65px;
+        line-height: 65px;
+        border-radius: 5px;
+        border: 1px solid #d1d1d1;
+        display: block;
+        width: 100%;
+        padding-left: 25px;
+        font-size: 14px;
+        -webkit-appearance: initial; }
+        #modal_form #formular .form_line select:focus {
+          box-shadow: 0 0 10px rgba(36, 196, 255, 0.51);
+          border: 1px solid #24c4ff; }
+      #modal_form #formular .form_line input[type=submit] {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        margin: 0;
+        font-size: 18px;
+        padding: 30px 0px;
+        cursor: pointer; }
+      #modal_form #formular .form_line .item {
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px; }
+        #modal_form #formular .form_line .item label {
+          font-size: 12px;
+          position: relative;
+          padding-left: 37px;
+          color: #a6a6a6;
+          display: block;
+          cursor: pointer; }
+          #modal_form #formular .form_line .item label span:before {
+            content: '';
+            width: 22px;
+            height: 22px;
+            border-radius: 2px;
+            border: 1px solid #b3b3b3;
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            transition: .2s; }
+          #modal_form #formular .form_line .item label span:after {
+            content: '';
+            display: block;
+            width: 11px;
+            height: 8px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU33OYQ2DQAwG0IeC4QQkzAESFhxgASfgAAmTMClIWHq5kiNZdn8uaV/br/P/bXhh7fDEhB2fZi5RKQU88ahgRoAbwhwwtgzNpne9kqUyHLBHNFt8Q3k6/l84Y1wZczrwgRFLzXkl+gK1VBDnkux/4AAAAABJRU5ErkJggg==) no-repeat;
+            position: absolute;
+            top: 9px;
+            left: 7px;
+            opacity: 0; }
+          #modal_form #formular .form_line .item label input[type=checkbox] {
+            display: none; }
+            #modal_form #formular .form_line .item label input[type=checkbox]:checked ~ span:after {
+              opacity: 1; }
+          #modal_form #formular .form_line .item label:hover ~ .hover {
+            visibility: initial; }
+          #modal_form #formular .form_line .item label a {
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid #a6a6a6;
+            color: #a6a6a6;
+            transition: .2s; }
+            #modal_form #formular .form_line .item label a:hover {
+              border-bottom: 1px solid transparent; }
+    #modal_form #formular .girl {
+      position: absolute;
+      bottom: 0;
+      right: -25px; }
+    #modal_form #formular .manager {
+      font-size: 16px;
+      font-weight: 600;
+      position: absolute;
+      right: 470px;
+      bottom: 95px; }
+      #modal_form #formular .manager span {
+        font-size: 12px;
+        display: block;
+        margin-top: 5px; }
+    #modal_form #formular .good {
+      background: url("../images/good.png") no-repeat;
+      width: 286px;
+      height: 142px;
+      padding: 36px;
+      font-family: 'Futura PT Extra';
+      font-size: 24px;
+      text-transform: uppercase;
+      position: absolute;
+      top: 280px;
+      right: 350px; }
+      #modal_form #formular .good span {
+        display: block;
+        text-transform: initial;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        margin-top: 7px; }
+
+.fancybox-close-small {
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  background: url("../images/close.svg") no-repeat;
+  top: -40px;
+  right: -40px;
+  transition: .2s; }
+  .fancybox-close-small:hover {
+    transform: rotate(90deg); }
+  .fancybox-close-small:after {
+    display: none; }
+
+#sended {
+  max-width: 765px;
+  width: 100%;
+  padding: 100px 100px 80px 250px;
+  background: #fff url("../images/sended.svg") no-repeat 100px 85px; }
+  #sended .text1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px; }
+  #sended .text2 {
+    font-size: 20px;
+    margin-top: 20px; }
+
+#callback {
+  max-width: 820px;
+  width: 100%;
+  padding: 50px;
+  display: none;
+  position: relative;
+  overflow: initial;
+  border-radius: 3px; }
+  #callback .title {
+    font-size: 24px;
+    color: #0e2d3b;
+    text-transform: initial;
+    margin-bottom: 20px; }
+    #callback .title span {
+      color: #ff7800;
+      font-weight: 900; }
+  #callback .row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 475px;
+    position: relative;
+    z-index: 1; }
+  #callback input[type=text] {
+    border: 1px solid #d0d0d0;
+    outline: none;
+    height: 66px;
+    border-radius: 3px;
+    background-color: #fff;
+    padding-left: 55px;
+    background: #fff url("../images/phone.svg") no-repeat 25px 23px;
+    vertical-align: top;
+    width: 100%;
+    font-family: 'Lato';
+    font-size: 16px; }
+  #callback .btn {
+    text-transform: uppercase;
+    line-height: 67px;
+    margin-left: -10px;
+    cursor: pointer;
+    padding: 0px 30px;
+    white-space: nowrap;
+    font-size: 16px; }
+  #callback .checkbox {
+    margin-left: 0px;
+    max-width: 310px;
+    margin-bottom: 0; }
+    #callback .checkbox label {
+      line-height: 18px; }
+  #callback .online {
+    padding-left: 35px;
+    color: #9c9c9c;
+    font-size: 12px;
+    line-height: 20px;
+    padding-right: 20px; }
+  #callback .timer {
+    color: #0e2d3b;
+    font-size: 24px;
+    margin-top: 15px; }
+  #callback .img {
+    width: 334px;
+    height: 416px;
+    background: url("../images/callback_bg.png") no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0px; }
+  #callback .row.row2 {
+    justify-content: flex-start; }
+  #callback .timer-millisecond {
+    position: relative;
+    margin-left: -5px; }
+  #callback .item {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    #callback .item label {
+      font-size: 12px;
+      position: relative;
+      padding-left: 37px;
+      color: #a6a6a6;
+      display: block;
+      cursor: pointer; }
+      #callback .item label span:before {
+        content: '';
+        width: 22px;
+        height: 22px;
+        border-radius: 2px;
+        border: 1px solid #b3b3b3;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        transition: .2s; }
+      #callback .item label span:after {
+        content: '';
+        display: block;
+        width: 11px;
+        height: 8px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAbUlEQVQoU33OYQ2DQAwG0IeC4QQkzAESFhxgASfgAAmTMClIWHq5kiNZdn8uaV/br/P/bXhh7fDEhB2fZi5RKQU88ahgRoAbwhwwtgzNpne9kqUyHLBHNFt8Q3k6/l84Y1wZczrwgRFLzXkl+gK1VBDnkux/4AAAAABJRU5ErkJggg==) no-repeat;
+        position: absolute;
+        top: 9px;
+        left: 7px;
+        opacity: 0; }
+      #callback .item label input[type=checkbox] {
+        display: none; }
+        #callback .item label input[type=checkbox]:checked ~ span:after {
+          opacity: 1; }
+      #callback .item label:hover ~ .hover {
+        visibility: initial; }
+      #callback .item label a {
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid #a6a6a6;
+        color: #a6a6a6;
+        transition: .2s; }
+        #callback .item label a:hover {
+          border-bottom: 1px solid transparent; }
+
+.shake {
+  animation: 0.2s tremor ease-out infinite; }
+
+@keyframes tremor {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); }
+  33% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  66% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+
+@media (min-width: 980px) and (max-width: 1200px) {
+  .container {
+    padding: 0px 15px; }
+  .contents {
+    margin-top: 40px; }
+  #modal_form {
+    padding: 20px 30px 30px; }
+  #modal_form #steps .actions ul li a {
+    padding: 21px 50px;
+    width: initial; }
+  #modal_form #formular .girl {
+    right: -125px; }
+  #modal_form #formular .manager {
+    right: 410px; }
+  #modal_form #formular .good {
+    right: 260px;
+    top: 280px; } }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    padding: 0px 15px; }
+  #modal_form {
+    padding: 10px 0px; }
+  .contents h1 br {
+    display: none; }
+  header .row .cont {
+    display: block;
+    text-align: center; }
+    header .row .cont .time {
+      margin-bottom: 10px; }
+  footer .row a {
+    white-space: nowrap; }
+  footer .row {
+    align-items: center; }
+  footer .row .copyright {
+    max-width: 300px;
+    line-height: 20px; }
+  .contents .icons .row .ico .text {
+    white-space: nowrap; }
+  .contents .icons .row .ico {
+    margin: 0px 22px; }
+  #callback .img {
+    right: -60px; }
+  #callback .item {
+    margin-bottom: 0px; }
+  #modal_form #steps .content {
+    padding-left: 30px;
+    margin-top: 35px; }
+  #modal_form #steps .content h3 {
+    font-size: 40px; }
+  #modal_form .img_step {
+    right: 20px;
+    top: 110px; }
+  #modal_form #steps .content .left {
+    max-width: 350px; }
+  #modal_form #steps .actions {
+    padding-left: 30px;
+    padding-bottom: 30px; }
+  #modal_form #steps .actions ul li a {
+    padding: 21px 50px;
+    width: initial; }
+  #modal_form #formular {
+    padding: 0px 30px;
+    width: initial; }
+  #modal_form #formular .left {
+    max-width: initial; }
+  #modal_form #formular .girl,
+  #modal_form #formular .good,
+  #modal_form #formular .manager {
+    display: none; }
+  #modal_form #formular p {
+    color: #000; }
+    #modal_form #formular p br {
+      display: none; }
+  #modal_form {
+    min-height: 650px; }
+  #modal_form #formular {
+    position: relative;
+    z-index: 3; } }
+
+/*# sourceMappingURL=main.css.map*/

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/ion.rangeSlider.css">
+		<link rel="stylesheet" href="styles/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="styles/ion.rangeSlider.skinHTML5.css">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<div class="main">
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="logo">
+							<a href="#">
+								<img src="./images/logo.png" alt="">
+							</a>
+							<div class="slogan">
+								Остекление и отделка<br/> балконов под ключ
+							</div>
+						</div>
+						<div class="cont">
+							<div class="col">
+								<a href="tel:+7 (495) 123-23-23" class="tel">+7 (495) 123-23-23</a>
+								<span class="time">Ежедневно с 09:00 до 24:00 </span>
+							</div>
+							<div class="col">
+								<a href="#callback" data-fancybox class="btn">Бесплатный звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="contents">
+				<div class="container">
+					<h1>Хотите узнать сколько будет стоить<br/> остекление и отделка вашего балкона?</h1>
+					<p class="sub_title">Ответьте на 5 вопросов и выберите подарки!</p>
+					<a href="#modal_form" data-fancybox class="big_btn">Начать</a>
+					<div class="text_btn">Составили для вас самые нужные вопросы для расчета.<br/> Это займет не больше 1 мин вашего времени.</div>
+					<div class="icons">
+						<div class="row">
+							<div class="ico">
+								<div class="img">
+									<img src="./images/main_ico_1.png" alt="">
+								</div>
+								<div class="text">ТЕПЛОПАКЕТЫ<span>в подарок!</span></div>
+							</div>
+							<div class="ico">
+								<div class="img">
+									<img src="./images/main_ico_2.png" alt="">
+								</div>
+								<div class="text">ВЫВОЗ МУСОРА<span>в подарок!</span></div>
+							</div>
+							<div class="ico">
+								<div class="img">
+									<img src="./images/main_ico_3.png" alt="">
+								</div>
+								<div class="text">ЖАЛЮЗИ<span>в подарок!</span></div>
+							</div>
+							<div class="ico">
+								<div class="img">
+									<img src="./images/main_ico_4.png" alt="">
+								</div>
+								<div class="text">ТЕПЛЫЕ ПОЛЫ<span>в подарок!</span></div>
+							</div>
+							<div class="ico">
+								<div class="img">
+									<img src="./images/main_ico_5.png" alt="">
+								</div>
+								<div class="text">ЛАМИНАТ 28 кат<span>в подарок!</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="copyright">© 2018 «БалконХауз». Все права защищены. Сайт не является публичной офертой.</div>
+						<div class="link">
+							<a href="#rules" data-fancybox>Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		
+			<div id="modal_form">
+			<form action="#" method="POST" id="main_form" enctype="multipart/form-data">
+				<div class="img_step">
+					<!-- step 1-->
+					<div class="step1_img">
+						<img src="./images/step_1_img.jpg" alt="">
+					</div>
+
+					<!-- step 2-->
+					<div class="step2_img">
+						<img src="./images/step_2_img.png" class="opacity step2_img_1">
+						<img src="./images/step_1_img.png" class="opacity step2_img_2">
+						<img src="./images/step_1_img.png" class="opacity step2_img_3">
+						<img src="./images/step_2_img.png" class="opacity step2_img_4">
+					</div>
+
+					<!-- step 3-->
+					<div class="step3_img">
+						<img src="./images/step_3_img1.png" class="opacity step3_img_1">
+						<img src="./images/step_1_img.png" class="opacity step3_img_2">
+						<img src="./images/step_1_img.png" class="opacity step3_img_3">
+						<img src="./images/step_1_img.png" class="opacity step3_img_4">
+						<img src="./images/step_2_img.png" class="opacity step3_img_5">
+					</div>
+
+					<!-- step 4-->
+					<div class="step4_img">
+						<img src="./images/step_2_img.png" class="opacity step4_img_1">
+						<img src="./images/step_1_img.png" class="opacity step4_img_2">
+						<img src="./images/step_1_img.png" class="opacity step4_img_3">
+						<img src="./images/step_1_img.png" class="opacity step4_img_4">
+						<img src="./images/step_2_img.png" class="opacity step4_img_5">
+					</div>
+
+					<!-- step 5-->
+					<div class="step5_img">
+						<img src="./images/step_2_img.png" class="opacity step5_img_1">
+						<img src="./images/step_1_img.png" class="opacity step5_img_2">
+						<img src="./images/step_1_img.png" class="opacity step5_img_3">
+						<img src="./images/step_1_img.png" class="opacity step5_img_4">
+						<img src="./images/step_2_img.png" class="opacity step5 _img_5">
+					</div>
+				</div>
+
+				<!-- step 6-->
+				<div class="step_6_images">
+					<div class="item item1 opacity active">
+						<img src="./images/step_6_item_1.png" alt="">
+						<div class="text">
+							<div class="zag">Жалюзи</div>
+							<p>Рыба текст. Остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</p>
+						</div>
+					</div>
+					<div class="item item2 opacity">
+						<img src="./images/step_6_item_2.png" alt="">
+						<div class="text">
+							<div class="zag">Кёрхер в подарок!</div>
+							<p>Рыба текст. Остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</p>
+						</div>
+					</div>
+					<div class="item item3 opacity">
+						<img src="./images/step_6_item_3.png" alt="">
+						<div class="text">
+							<div class="zag">Сушилка в подарок!</div>
+							<p>Рыба текст. Остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</p>
+						</div>
+					</div>
+					<div class="item item4 opacity">
+						<img src="./images/step_6_item_4.png" alt="">
+						<div class="text">
+							<div class="zag">Теплый пол в подарок!</div>
+							<p>Рыба текст. Остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</p>
+						</div>
+					</div>
+					<div class="item item5 opacity">
+						<img src="./images/step_6_item_5.png" alt="">
+						<div class="text">
+							<div class="zag">Вывоз мусора в подарок!</div>
+							<p>Рыба текст. Остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</p>
+						</div>
+					</div>
+				</div>
+				<div id="steps">
+					<h3 class="step_title">Шаг 1</h3>
+					<section class="step step1">	
+						<div class="left">
+							<div class="ask">Укажите площадь балкона</div>
+							<div class="step1_text1">Площадь <span id="range1_val">5 м<sup>2</sup></span></div>
+							<input type="hidden" name="step_1_range_1" id="range1">	
+							<div class="ask">На какой бюджет рассчитываете?</div>
+							<div class="step1_text1">Бюджет <span id="range2_val">5 000 руб</span></div>
+							<input type="hidden" name="step_1_range_2" id="range2">
+						</div>	
+					</section>
+					<h3 class="step_title">Шаг 2</h3>
+					<section class="step step2">
+						<div class="left">
+							<div class="ask">Какое остекление вы хотите?</div>
+							<div class="radio_list">
+								<div class="item">
+									<label>
+										<input type="radio" name="step_2" data-value="1" value="Холодное (Проведал)">
+										<span>Холодное (Проведал)</span>
+									</label>
+									<div class="hover">
+										<div class="col">
+											<img src="./images/step_2_img_1.jpg" alt="">
+										</div>
+										<div class="col">
+											<div class="zag">Холодное  остекление</div>
+											<div class="text">Алюминиевое остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_2" data-value="2" value="Полутеплое (Слайдорс)">
+										<span>Полутеплое (Слайдорс)</span>
+									</label>
+									<div class="hover">
+										<div class="col">
+											<img src="./images/step_2_img_1.jpg" alt="">
+										</div>
+										<div class="col">
+											<div class="zag">Холодное  остекление</div>
+											<div class="text">Алюминиевое остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_2" data-value="3" value="Теплое ( Окнами Rehau, Veka, KBE)">
+										<span>Теплое ( Окнами Rehau, Veka, KBE)</span>
+									</label>
+									<div class="hover">
+										<div class="col">
+											<img src="./images/step_2_img_1.jpg" alt="">
+										</div>
+										<div class="col">
+											<div class="zag">Холодное  остекление</div>
+											<div class="text">Алюминиевое остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_2" data-value="4" value="Панорамное (от пола до потолка)">
+										<span>Панорамное (от пола до потолка)</span>
+									</label>
+									<div class="hover">
+										<div class="col">
+											<img src="./images/step_2_img_1.jpg" alt="">
+										</div>
+										<div class="col">
+											<div class="zag">Холодное  остекление</div>
+											<div class="text">Алюминиевое остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_2" data-value="5" value="Не определился">
+										<span>Не определился</span>
+									</label>
+									<div class="hover">
+										<div class="col">
+											<img src="./images/step_2_img_1.jpg" alt="">
+										</div>
+										<div class="col">
+											<div class="zag">Холодное  остекление</div>
+											<div class="text">Алюминиевое остекление для узких балконов быстро производиться, и быстро монтируется. В профиль устанавливается стекло 4-5 мм.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</section>
+					<h3 class="step_title">Шаг 3</h3>
+					<section class="step step3">
+						<div class="left">
+							<div class="ask">Выберите дополнительные работы к остеклению</div>
+							<div class="checkbox_list">
+								<div class="item">
+									<label>
+										<input type="checkbox" name="step_3[]" data-value="1" value="Вынос (200мм, 300мм, 350мм)">
+										<span>Вынос (200мм, 300мм, 350мм)</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="checkbox" name="step_3[]" data-value="2" value="Крыша (Сайдинг, Гофролист)">
+										<span>Крыша (Сайдинг, Гофролист)</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="checkbox" name="step_3[]" data-value="3" value="Кладка (Пеноблок, Пескобетон, Кирпич)">
+										<span>Кладка (Пеноблок, Пескобетон, Кирпич)</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="checkbox" name="step_3[]" data-value="4" value="Внешняя отделка (Сайдинг, Гофролист)">
+										<span>Внешняя отделка (Сайдинг, Гофролист)</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="checkbox" name="step_3[]" data-value="5" value="Увеличение по полу (до 300мм)">
+										<span>Увеличение по полу (до 300мм)</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="checkbox" name="step_3[]" data-value="6" value="Не определился">
+										<span>Не определился</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</section>
+					<h3 class="step_title">Шаг 4</h3>
+					<section class="step step4">
+						<div class="left">
+							<div class="ask">Какую отделку стен вы хотите?</div>
+							<div class="radio_list">
+								<div class="item">
+									<label>
+										<input type="radio" name="step_4" data-value="1" value="ПВХ панели">
+										<span>ПВХ панели</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_4" data-value="2" value="МДФ панели">
+										<span>МДФ панели</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_4" data-value="3" value="Деревянная вагонка">
+										<span>Деревянная вагонка</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_4" data-value="4" value="Гипсокартон (влагостойкий 19мм)">
+										<span>Гипсокартон (влагостойкий 19мм)</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_4" data-value="5" value="Штукатурка и покраска">
+										<span>Штукатурка и покраска</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_4" data-value="6" value="Не определился">
+										<span>Не определился</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_4" data-value="7" value="Отделка не нужна">
+										<span>Отделка не нужна</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</section>
+					<h3 class="step_title">Шаг 5</h3>
+					<section class="step step5">
+						<div class="left">
+							<div class="ask">Какую отделку пола вы хотите?</div>
+							<div class="radio_list">
+								<div class="item">
+									<label>
+										<input type="radio" name="step_5" data-value="1" value="Евродоска 36мм">
+										<span>Евродоска 36мм</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_5" data-value="2" value="Ламинат и Фанера 16мм">
+										<span>Ламинат и Фанера 16мм</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_5" data-value="3" value="Плитка и Стяжка">
+										<span>Плитка и Стяжка</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_5" data-value="4" value="Сухой пол Knauf">
+										<span>Сухой пол Knauf</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_5" data-value="5" value="Линолеум">
+										<span>Линолеум</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_5" data-value="6" value="Не определился">
+										<span>Не определился</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_5" data-value="7" value="Отделка не нужна">
+										<span>Отделка не нужна</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</section>
+					<h3 class="step_title">Шаг 6</h3>
+					<section class="step step6">
+						<div class="left">
+							<div class="ask">Выберите подарок к заказу</div>
+							<div class="radio_list">
+								<div class="item">
+									<label>
+										<input type="radio" name="step_6" data-value="1" value="Жалюзи" checked>
+										<span>Жалюзи</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_6" data-value="2" value="Кёрхер">
+										<span>Кёрхер</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_6" data-value="3" value="Сушилка">
+										<span>Сушилка</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_6" data-value="4" value="Тёплый пол">
+										<span>Тёплый пол</span>
+									</label>
+								</div>
+								<div class="item">
+									<label>
+										<input type="radio" name="step_6" data-value="5" value="Вывоз мусора">
+										<span>Вывоз мусора</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div id="finished">
+					<div class="animation">
+						<img src="./images/animation.jpg" alt="">
+					</div>
+					<div class="timer">
+						<div id="countdown"></div>
+						<div class="text">Проект обрабатывается ...</div>
+					</div>
+				</div>
+				<div id="formular">
+					<div class="left">
+						<div class="title">Расчёт готов!</div>
+						<p>Оставьте свои контактные данные и мы свяжемся с Вами<br/> для уточнения деталей, а так же зафиксируем по нему<br/>  персональную скидку на будущий заказ</p>
+						<div class="form_line">
+							<input type="text" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="form_line">
+							<input type="text" name="tel" placeholder="Ваш номер телефона">
+						</div>
+						<div class="form_line">
+							<select name="call_time">
+								<option>Удобное время звонка</option>
+								<option value="8:00-12:00">8:00-12:00</option>
+								<option value="12:00-14:00">12:00-14:00</option>
+								<option value="14:00-16:00">14:00-16:00</option>
+								<option value="16:00-18:00">16:00-18:00</option>
+								<option value="18:00-20:00">18:00-20:00</option>
+							</select>
+						</div>
+						<div class="form_line">
+							<div class="files">
+								<input type="file" class="hide inputfile" name="file" id="upload2" data-multiple-caption="{count} файлов добавлено" />
+								<label for="upload2" class="file"><span>Прикрепить эскиз проекта</span></label>
+							</div>
+						</div>
+						<div class="form_line">
+							<div class="item">
+								<label>
+									<input type="checkbox" name="rules" id="rules1">
+									<span>Нажимая на кнопку, я дая свое согласие<br/> на обработку <a href="#rules" data-fancybox>персональных данных</a></span>
+								</label>
+							</div>
+						</div>
+						<div class="form_line">
+							<input type="submit" name="steps_form" value="Получить предложение" class="btn">
+						</div>
+
+					</div>
+					<img src="./images/girl.png" alt="Степанюк Ирина" class="girl">
+					<div class="manager">
+						Степанюк Ирина<span>Менеджер</span>
+					</div>
+					<div class="good">Вы отлично  справились!<span> Через 5мин. вышлем расчет.</span></div>
+				</div>
+		</form>
+			</div>
+		<div id="rules" style="display:none;">Политика...</div>
+		<div id="callback">
+			<div class="title">Перезвоним вам <span>бесплатно за 5 секунд</span> <br/>
+				и ответим на интересующие Вас вопросы</div>
+			<form>
+				<div class="row">
+					<input type="text" name="tel" placeholder="Телефон" class="tel">
+					<button type="submit" class="btn">Жду звонка</button>
+				</div>
+				<div class="item">
+					<label>
+						<input type="checkbox" name="rules">
+						<span>Нажимая на кнопку, я дая свое согласие<br/> на обработку <a href="#rules" data-fancybox>персональных данных</a></span>
+					</label>
+				</div>
+			</form>
+			<div class="row row2">
+				<p class="online">Свободных менеджеров на линии: 3<br>В процессе разговора с клиентами: 20<br>Обслуженных вызовово за сегодня: 47</p>
+				<p class="timer simple-timer">
+					<span class="timer-minute">00</span>
+					<label class="separator">:</label>
+					<span class="timer-second">05</span>,
+					<span class="timer-millisecond">0</span>
+				</p>
+			</div>
+			<div class="img"></div>
+		</div>
+		<script src="scripts/jquery.min.js"></script>
+		<script src="scripts/jquery.fancybox.min.js"></script>
+		<script src="scripts/jquery.maskedinput.min.js"></script>
+		<script src="scripts/jquery.matchHeight-min.js"></script>
+		<script src="scripts/jquery.steps.min.js"></script>
+		<script src="scripts/ion.rangeSlider.min.js"></script>
+		<script src="scripts/animationCounter.min.js"></script>
+		<script src="scripts/simpletimer.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
